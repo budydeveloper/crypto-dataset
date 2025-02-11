@@ -1,0 +1,16 @@
+[
+    "BTC-USD",
+    "ETH-USD",
+    "XRP-USD",
+    "USDT-USD",
+    "SOL-USD",
+    "BNB-USD",
+    "USDC-USD",
+    "DOGE-USD",
+    "ADA-USD",
+    "DOT-USD",
+    "LTC-USD",
+    "AVAX-USD",
+    "LINK-USD",
+    "MATIC-USD"
+]
