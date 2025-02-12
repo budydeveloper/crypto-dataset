@@ -1,0 +1,9 @@
+1mo --> yfinace
+1wk --> yfinace
+1d --> yfinace
+4h --> correcto 2011-2025
+1h --> correcto 2011-2025
+30m --> default  2011-2021
+15m --> correcto 2011-2025
+5m --> default 2011-2021
+1m --> another repo 2017 -> 2021
