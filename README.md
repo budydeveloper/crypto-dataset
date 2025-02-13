@@ -1,7 +1,11 @@
-# 📊 Proyecto de Descarga de Datos con Yahoo Finance 🚀
+# 📊 Proyecto de Generación de Datasets Financieros 🚀
 
 ## 📌 Descripción
-Este proyecto permite la descarga automática de datos históricos y de intervalos específicos de **criptomonedas**, **divisas (forex)** y **acciones** utilizando la biblioteca `yfinance`. Los datos descargados se guardan en archivos CSV organizados en carpetas por tipo de activo.
+Este proyecto está enfocado en la **generación de datasets financieros**. Para ello, contamos con dos opciones principales:
+
+1️⃣ **Generación de datos en tiempo real** utilizando `yfinance` para descargar datos de criptomonedas, divisas (forex) y acciones.
+
+2️⃣ **Recopilación de datasets históricos** obtenidos de diversas fuentes como Kaggle, disponibles para su descarga en un repositorio de Google Drive.
 
 ## 📁 Estructura del Proyecto
 
@@ -36,44 +40,49 @@ Puedes instalar las dependencias ejecutando:
 pip install yfinance pandas
 ```
 
-## 📂 Archivos y Funcionalidad
+## 📂 Opciones para Generar Datasets
 
-### 1️⃣ `cryptos/`
-- **📄 `cryptos.txt`**: Contiene una lista en formato JSON de criptomonedas a descargar.
+### 1️⃣ Generación de Datos con `yfinance`
+Esta opción permite descargar datos en tiempo real desde Yahoo Finance. Los scripts organizan los datos en archivos CSV para su análisis.
+
+#### 📌 Archivos y Funcionalidad
+
+#### 🏦 `cryptos/`
+- **📄 `cryptos.txt`**: Lista en formato JSON de criptomonedas a descargar.
 - **🐍 `update_1d_1mo_1wk.py`**: Descarga datos históricos con intervalos `1d`, `1wk`, y `1mo`.
 - **🐍 `update_intraday_short-term.py`**: Descarga datos intradía de corto plazo.
 
-### 2️⃣ `forex/`
+#### 💱 `forex/`
 - **📄 `forex.txt`**: Lista de pares de divisas a descargar.
 - **🐍 `update_forex_datasets.py`**: Descarga datos con intervalos desde `1m` hasta `3mo`.
 
-### 3️⃣ `stocks/`
+#### 📈 `stocks/`
 - **📄 `stocks.txt`**: Lista de acciones a descargar.
 - **🐍 `update_stocks_datasets.py`**: Descarga datos de acciones con intervalos variados.
 
+### 2️⃣ Recopilación de Datasets de Kaggle y otras Fuentes
+Para complementar la generación de datos en tiempo real, puedes acceder a una recopilación de datasets financieros obtenidos de internet. Estos incluyen datos históricos extensos que pueden ser útiles para análisis más profundos.
+
+🔗 **[Recopilación de Datasets en Google Drive](https://drive.google.com/drive/u/1/folders/1Igp4jpMJwswReW1ZRWB9F7lcTIj9Oftd)**
+
 ## 🚀 Uso
 
-### ▶️ Descargar datos históricos de criptomonedas
+### ▶️ Descargar datos históricos de criptomonedas con `yfinance`
 ```sh
 python cryptos/update_1d_1mo_1wk.py
 ```
 
-### ▶️ Descargar datos históricos de divisas (Forex)
+### ▶️ Descargar datos históricos de divisas (Forex) con `yfinance`
 ```sh
 python forex/update_forex_datasets.py
 ```
 
-### ▶️ Descargar datos históricos de acciones
+### ▶️ Descargar datos históricos de acciones con `yfinance`
 ```sh
 python stocks/update_stocks_datasets.py
 ```
 
 Cada script generará archivos CSV en carpetas correspondientes a cada activo.
-
-## 📥 Descarga de Datasets Adicionales
-También puedes acceder a una recopilación de datasets de internet provenientes de Kaggle a través del siguiente enlace de Google Drive:
-
-🔗 [Recopilación de Datasets en Google Drive](https://drive.google.com/drive/u/1/folders/1Igp4jpMJwswReW1ZRWB9F7lcTIj9Oftd)
 
 ## 📝 Notas
 - 📂 Los archivos de datos se guardan en directorios con el nombre del activo o par de divisas.
