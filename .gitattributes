@@ -1,3 +1,0 @@
-*.csv filter=lfs diff=lfs merge=lfs -text
-web/crypto/bitcoin/BTC-USD_5m.csv filter=lfs diff=lfs merge=lfs -text
-web/crypto/bitcoin/BTC-USD_1m.csv filter=lfs diff=lfs merge=lfs -text
