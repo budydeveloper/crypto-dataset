@@ -45,7 +45,7 @@ Datasets are provided in multiple timeframes to suit different analysis needs, i
 - 1wk
 
 ### Column Definition Format
-`Date,Close,High,Low,Open,Volume`
+`datetime,open,high,low,close,volume`
 
 ## 💡 Usage
 
