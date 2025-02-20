@@ -1,6 +1,8 @@
 #!/usr/bin/env python
 # -*- coding: utf-8 -*-
 
+# pip install --upgrade yfinance
+
 import os
 import json
 import yfinance as yf
